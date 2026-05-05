@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; 
+rel="stylesheet">  
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-vector/abstract-modern-geometric-shape-white-backdrop-with-text-space_1017-51516.jpg');
+            font-family: Arial, sans-serif;
+            background: var(--bg-image) no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        .login-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 30px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #999;
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-bottom: 8px;
+            width: fit-content;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #d0d0d0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #999;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            background-color: #c0c0c0;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            accent-color: #00bcd4;
+            cursor: pointer;
+        }
+
+        .checkbox-text {
+            font-size: 14px;
+            color: #666;
+            flex: 1;
+        }
+
+        .checkbox-text p {
+            margin: 0;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn {
+            background-color: #00bcd4;
+            color: white;
+        }
+
+        .login-btn:hover {
+            background-color: #00a8c4;
+        }
+
+        .cancel-btn {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .cancel-btn:hover {
+            background-color: #d0d0d0;
+        }
+
+        .footer-link {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer-link a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+
+        <div class="logo">
+            <img src="https://img.freepik.com/premium-vector/blue-gold-logo-with-diploma-center-it_788759-4391.jpg?w=360x" alt="School Logo">
+        </div>
+
+        <h1>Login</h1>
+
+        <form>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter here" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="•••••••" required>
+            </div>
+
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="stay-logged">
+                <div class="checkbox-text">
+                    <span>Stay logged in</span>
+                    <p>Your session will stay active on this device</p>
+                </div>
+            </div>
+
+
+            <div class="button-group">
+                <button type="submit" class="login-btn" onclick="navigateToDashboard()">Login</button>
+                <button type="reset" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+
+
+        <div class="footer-link">
+            <a href="#forgot">Forgot username / password?</a>
+        </div>
+    </div>
+
+    <script>
+        function navigateToDashboard() {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>
