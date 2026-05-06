@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            background-image:url(ictbgproj4thQ.avif);
+            background-repeat: repeat;
+        }
+
+        .container{
+            background-color: white;
+            padding: 20px;
+            width: 280px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        input{
+            padding: 6px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 8px 15px;
+        }
+        
+        .output{
+            margin-top: 15px;
+            text-align: left;
+
+        }
+
+         .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    }
+
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+
+    .taskwrapper{
+        display: flex;
+        flex-wrap: wrap;/*allows multiple rows*/
+        justify-content: center;/*center horizontally*/
+        gap:25px;/* space between items*/  
+        margin-left: 260px;
+        padding: 20px;
+    }
+
+    .container {
+        width: 250px;/* smaller so they fit side by side*/
+        margin: auto;
+    }
+
+    .header {
+        position: fixed;
+        left: 20pc;
+        top: 20px;
+        background-color: #111;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+   
+    <div class="taskwrapper">
+        
+    
+
+
+<div id="mySidenav" class="sidenav">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="height: 100px;">
+                <center>
+                    <img src="logoictprojQ4th.avif" height="100" class="rounded-circle">
+                </center>
+            </a>
+
+            <hr>
+
+            <div class="collapse navbar-collapse" id="nav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">DASHBOARD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notebooks.html">VIRTUAL NOTEBOOKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tasks.html">TASKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">PROFILE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">LOG OUT</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</div>
+
+<script>
+document.getElementById("mySidenav").style.width = "250px";
+</script>
+
+
+
+  <div class container>
+    <h1 style="background-color: #111; color: #f1f1f1;"  > Tasks</h1>
+  </div>
+
+    <div class="container">
+        <h1 style="color: black;">Mathematics</h1>
+        <h4 style="color: grey;">Drill sheet 2 </h4>
+        <h5 style = "color: grey;">Deadline: April 9, 2026 │ 10:00 A.M.</h5>
+
+        <button class="btn btn-primary">Take this Activity</button>
+
+    </div>
+
+    <div class="container">
+        <h1 style="color: black;">Science</h1>
+        <h4 style="color: grey;">Drill sheet 2 </h4>
+        <h5 style = "color: grey;">Deadline: April 10, 2026 │ 11:00 A.M.</h5>
+
+         <button class="btn btn-primary">Take this Activity</button>
+    
+    </div>
+
+    <div class="container">
+        <h1 style="color: black;">ICT</h1>
+        <h4 style="color: grey;">Quarter Project </h4>
+        <h5 style = "color: grey;">Deadline: April 11, 2026 │ 9:00 A.M.</h5>
+
+         <button class="btn btn-primary">Take this Activity</button>
+    
+    </div>
+
+    <div class="container">
+        <h1 style="color: black;">Social Studies</h1>
+        <h4 style="color: grey;">Seatwork 1</h4>
+        <h5 style = "color: grey;">Deadline: April 13, 2026 │ 2:00 P.M.</h5>
+
+         <button class="btn btn-primary">Take this Activity</button>
+    
+    </div>
+
+    </div>
+</div>
+
+    
+</body>
